@@ -1,0 +1,457 @@
+server:
+  port: 8089
+
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+location:
+  provinces:
+    - id: 60eaaa6f1173335842c35663
+      name: An Giang
+      slug: an-giang
+      type: tinh
+      nameWithType: Tỉnh An Giang
+      code: 89
+
+    - id: 60eaaa6f1173335842c3565b
+      name: Bà Rịa - Vũng Tàu
+      slug: ba-ria---vung-tau
+      type: tinh
+      nameWithType: Tỉnh Bà Rịa - Vũng Tàu
+      code: 77
+
+    - id: 60eaaa6f1173335842c35668
+      name: Bạc Liêu
+      slug: bac-lieu
+      type: tinh
+      nameWithType: Tỉnh Bạc Liêu
+      code: 95
+
+    - id: 60eaaa6f1173335842c35639
+      name: Bắc Giang
+      slug: bac-giang
+      type: tinh
+      nameWithType: Tỉnh Bắc Giang
+      code: 24
+
+    - id: 60eaaa6f1173335842c3562e
+      name: Bắc Kạn
+      slug: bac-kan
+      type: tinh
+      nameWithType: Tỉnh Bắc Kạn
+      code: 06
+
+    - id: 60eaaa6f1173335842c3563c
+      name: Bắc Ninh
+      slug: bac-ninh
+      type: tinh
+      nameWithType: Tỉnh Bắc Ninh
+      code: 27
+
+    - id: 60eaaa6f1173335842c3565f
+      name: Bến Tre
+      slug: ben-tre
+      type: tinh
+      nameWithType: Tỉnh Bến Tre
+      code: 83
+
+    - id: 60eaaa6f1173335842c35659
+      name: Bình Dương
+      slug: binh-duong
+      type: tinh
+      nameWithType: Tỉnh Bình Dương
+      code: 74
+
+    - id: 60eaaa6f1173335842c3564d
+      name: Bình Định
+      slug: binh-dinh
+      type: tinh
+      nameWithType: Tỉnh Bình Định
+      code: 52
+
+    - id: 60eaaa6f1173335842c35657
+      name: Bình Phước
+      slug: binh-phuoc
+      type: tinh
+      nameWithType: Tỉnh Bình Phước
+      code: 70
+
+    - id: 60eaaa6f1173335842c35651
+      name: Bình Thuận
+      slug: binh-thuan
+      type: tinh
+      nameWithType: Tỉnh Bình Thuận
+      code: 60
+
+    - id: 60eaaa6f1173335842c35669
+      name: Cà Mau
+      slug: ca-mau
+      type: tinh
+      nameWithType: Tỉnh Cà Mau
+      code: 96
+
+    - id: 60eaaa6f1173335842c3562d
+      name: Cao Bằng
+      slug: cao-bang
+      type: tinh
+      nameWithType: Tỉnh Cao Bằng
+      code: 04
+
+    - id: 60eaaa6f1173335842c35665
+      name: Cần Thơ
+      slug: can-tho
+      type: thanh-pho
+      nameWithType: Thành phố Cần Thơ
+      code: 92
+
+    - id: 60eaaa6f1173335842c3564a
+      name: Đà Nẵng
+      slug: da-nang
+      type: thanh-pho
+      nameWithType: Thành phố Đà Nẵng
+      code: 48
+
+    - id: 60eaaa6f1173335842c35654
+      name: Đắk Lắk
+      slug: dak-lak
+      type: tinh
+      nameWithType: Tỉnh Đắk Lắk
+      code: 66
+
+    - id: 60eaaa6f1173335842c35655
+      name: Đắk Nông
+      slug: dak-nong
+      type: tinh
+      nameWithType: Tỉnh Đắk Nông
+      code: 67
+
+    - id: 60eaaa6f1173335842c35631
+      name: Điện Biên
+      slug: dien-bien
+      type: tinh
+      nameWithType: Tỉnh Điện Biên
+      code: 11
+
+    - id: 60eaaa6f1173335842c3565a
+      name: Đồng Nai
+      slug: dong-nai
+      type: tinh
+      nameWithType: Tỉnh Đồng Nai
+      code: 75
+
+    - id: 60eaaa6f1173335842c35662
+      name: Đồng Tháp
+      slug: dong-thap
+      type: tinh
+      nameWithType: Tỉnh Đồng Tháp
+      code: 87
+
+    - id: 60eaaa6f1173335842c35653
+      name: Gia Lai
+      slug: gia-lai
+      type: tinh
+      nameWithType: Tỉnh Gia Lai
+      code: 64
+
+    - id: 60eaaa6f1173335842c3562c
+      name: Hà Giang
+      slug: ha-giang
+      type: tinh
+      nameWithType: Tỉnh Hà Giang
+      code: 02
+
+    - id: 60eaaa6f1173335842c35641
+      name: Hà Nam
+      slug: ha-nam
+      type: tinh
+      nameWithType: Tỉnh Hà Nam
+      code: 35
+
+    - id: 60eaaa6f1173335842c3562b
+      name: Hà Nội
+      slug: ha-noi
+      type: thanh-pho
+      nameWithType: Thành phố Hà Nội
+      code: 01
+
+    - id: 60eaaa6f1173335842c35646
+      name: Hà Tĩnh
+      slug: ha-tinh
+      type: tinh
+      nameWithType: Tỉnh Hà Tĩnh
+      code: 42
+
+    - id: 60eaaa6f1173335842c3563d
+      name: Hải Dương
+      slug: hai-duong
+      type: tinh
+      nameWithType: Tỉnh Hải Dương
+      code: 30
+
+    - id: 60eaaa6f1173335842c3563e
+      name: Hải Phòng
+      slug: hai-phong
+      type: thanh-pho
+      nameWithType: Thành phố Hải Phòng
+      code: 31
+
+    - id: 60eaaa6f1173335842c35666
+      name: Hậu Giang
+      slug: hau-giang
+      type: tinh
+      nameWithType: Tỉnh Hậu Giang
+      code: 93
+
+    - id: 60eaaa6f1173335842c35635
+      name: Hoà Bình
+      slug: hoa-binh
+      type: tinh
+      nameWithType: Tỉnh Hoà Bình
+      code: 17
+
+    - id: 60eaaa6f1173335842c3565c
+      name: Hồ Chí Minh
+      slug: ho-chi-minh
+      type: thanh-pho
+      nameWithType: Thành phố Hồ Chí Minh
+      code: 79
+
+    - id: 60eaaa6f1173335842c3563f
+      name: Hưng Yên
+      slug: hung-yen
+      type: tinh
+      nameWithType: Tỉnh Hưng Yên
+      code: 33
+
+    - id: 60eaaa6f1173335842c3564f
+      name: Khánh Hòa
+      slug: khanh-hoa
+      type: tinh
+      nameWithType: Tỉnh Khánh Hòa
+      code: 56
+
+    - id: 60eaaa6f1173335842c35664
+      name: Kiên Giang
+      slug: kien-giang
+      type: tinh
+      nameWithType: Tỉnh Kiên Giang
+      code: 91
+
+    - id: 60eaaa6f1173335842c35652
+      name: Kon Tum
+      slug: kon-tum
+      type: tinh
+      nameWithType: Tỉnh Kon Tum
+      code: 62
+
+    - id: 60eaaa6f1173335842c35632
+      name: Lai Châu
+      slug: lai-chau
+      type: tinh
+      nameWithType: Tỉnh Lai Châu
+      code: 12
+
+    - id: 60eaaa6f1173335842c35637
+      name: Lạng Sơn
+      slug: lang-son
+      type: tinh
+      nameWithType: Tỉnh Lạng Sơn
+      code: 20
+
+    - id: 60eaaa6f1173335842c35630
+      name: Lào Cai
+      slug: lao-cai
+      type: tinh
+      nameWithType: Tỉnh Lào Cai
+      code: 10
+
+    - id: 60eaaa6f1173335842c35656
+      name: Lâm Đồng
+      slug: lam-dong
+      type: tinh
+      nameWithType: Tỉnh Lâm Đồng
+      code: 68
+
+    - id: 60eaaa6f1173335842c3565d
+      name: Long An
+      slug: long-an
+      type: tinh
+      nameWithType: Tỉnh Long An
+      code: 80
+
+    - id: 60eaaa6f1173335842c35642
+      name: Nam Định
+      slug: nam-dinh
+      type: tinh
+      nameWithType: Tỉnh Nam Định
+      code: 36
+
+    - id: 60eaaa6f1173335842c35645
+      name: Nghệ An
+      slug: nghe-an
+      type: tinh
+      nameWithType: Tỉnh Nghệ An
+      code: 40
+
+    - id: 60eaaa6f1173335842c35643
+      name: Ninh Bình
+      slug: ninh-binh
+      type: tinh
+      nameWithType: Tỉnh Ninh Bình
+      code: 37
+
+    - id: 60eaaa6f1173335842c35650
+      name: Ninh Thuận
+      slug: ninh-thuan
+      type: tinh
+      nameWithType: Tỉnh Ninh Thuận
+      code: 58
+
+    - id: 60eaaa6f1173335842c3563a
+      name: Phú Thọ
+      slug: phu-tho
+      type: tinh
+      nameWithType: Tỉnh Phú Thọ
+      code: 25
+
+    - id: 60eaaa6f1173335842c3564e
+      name: Phú Yên
+      slug: phu-yen
+      type: tinh
+      nameWithType: Tỉnh Phú Yên
+      code: 54
+
+    - id: 60eaaa6f1173335842c35647
+      name: Quảng Bình
+      slug: quang-binh
+      type: tinh
+      nameWithType: Tỉnh Quảng Bình
+      code: 44
+
+    - id: 60eaaa6f1173335842c3564b
+      name: Quảng Nam
+      slug: quang-nam
+      type: tinh
+      nameWithType: Tỉnh Quảng Nam
+      code: 49
+
+    - id: 60eaaa6f1173335842c3564c
+      name: Quảng Ngãi
+      slug: quang-ngai
+      type: tinh
+      nameWithType: Tỉnh Quảng Ngãi
+      code: 51
+
+    - id: 60eaaa6f1173335842c35638
+      name: Quảng Ninh
+      slug: quang-ninh
+      type: tinh
+      nameWithType: Tỉnh Quảng Ninh
+      code: 22
+
+    - id: 60eaaa6f1173335842c35648
+      name: Quảng Trị
+      slug: quang-tri
+      type: tinh
+      nameWithType: Tỉnh Quảng Trị
+      code: 45
+
+    - id: 60eaaa6f1173335842c35667
+      name: Sóc Trăng
+      slug: soc-trang
+      type: tinh
+      nameWithType: Tỉnh Sóc Trăng
+      code: 94
+
+    - id: 60eaaa6f1173335842c35633
+      name: Sơn La
+      slug: son-la
+      type: tinh
+      nameWithType: Tỉnh Sơn La
+      code: 14
+
+    - id: 60eaaa6f1173335842c35658
+      name: Tây Ninh
+      slug: tay-ninh
+      type: tinh
+      nameWithType: Tỉnh Tây Ninh
+      code: 72
+
+    - id: 60eaaa6f1173335842c35640
+      name: Thái Bình
+      slug: thai-binh
+      type: tinh
+      nameWithType: Tỉnh Thái Bình
+      code: 34
+
+    - id: 60eaaa6f1173335842c35636
+      name: Thái Nguyên
+      slug: thai-nguyen
+      type: tinh
+      nameWithType: Tỉnh Thái Nguyên
+      code: 19
+
+    - id: 60eaaa6f1173335842c35644
+      name: Thanh Hóa
+      slug: thanh-hoa
+      type: tinh
+      nameWithType: Tỉnh Thanh Hóa
+      code: 38
+
+    - id: 60eaaa6f1173335842c35649
+      name: Thừa Thiên Huế
+      slug: thua-thien-hue
+      type: tinh
+      nameWithType: Tỉnh Thừa Thiên Huế
+      code: 46
+
+    - id: 60eaaa6f1173335842c3565e
+      name: Tiền Giang
+      slug: tien-giang
+      type: tinh
+      nameWithType: Tỉnh Tiền Giang
+      code: 82
+
+    - id: 60eaaa6f1173335842c35660
+      name: Trà Vinh
+      slug: tra-vinh
+      type: tinh
+      nameWithType: Tỉnh Trà Vinh
+      code: 84
+
+    - id: 60eaaa6f1173335842c3562f
+      name: Tuyên Quang
+      slug: tuyen-quang
+      type: tinh
+      nameWithType: Tỉnh Tuyên Quang
+      code: 08
+
+    - id: 60eaaa6f1173335842c35661
+      name: Vĩnh Long
+      slug: vinh-long
+      type: tinh
+      nameWithType: Tỉnh Vĩnh Long
+      code: 86
+
+    - id: 60eaaa6f1173335842c3563b
+      name: Vĩnh Phúc
+      slug: vinh-phuc
+      type: tinh
+      nameWithType: Tỉnh Vĩnh Phúc
+      code: 26
+
+    - id: 60eaaa6f1173335842c35634
+      name: Yên Bái
+      slug: yen-bai
+      type: tinh
+      nameWithType: Tỉnh Yên Bái
+      code: 15

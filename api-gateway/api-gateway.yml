@@ -1,0 +1,121 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins: '*'
+            allowed-methods: '*'
+            allowed-headers: '*'
+            max-age: 30
+
+      routes:
+        - id: registration
+          uri: lb://USER
+          predicates:
+            - Path=/api/registration/**
+
+        - id: jobSeeker
+          uri: lb://USER
+          predicates:
+            - Path=/api/jobSeekers/**
+
+        - id: recruiter
+          uri: lb://USER
+          predicates:
+            - Path=/api/recruiters/**
+
+        - id: admin
+          uri: lb://USER
+          predicates:
+            - Path=/api/admins/**
+
+        - id: post
+          uri: lb://POST
+          predicates:
+            - Path=/api/posts/**
+
+        - id: category
+          uri: lb://POST
+          predicates:
+            - Path=/api/categories/**
+
+        - id: profession
+          uri: lb://POST
+          predicates:
+            - Path=/api/professions/**
+
+        - id: benefit
+          uri: lb://POST
+          predicates:
+            - Path=/api/benefits/**
+
+        - id: level
+          uri: lb://POST
+          predicates:
+            - Path=/api/levels/**
+
+        - id: location
+          uri: lb://POST
+          predicates:
+            - Path=/api/locations/**
+
+        - id: business
+          uri: lb://BUSINESS
+          predicates:
+            - Path=/api/businesses/**
+
+        - id: resume
+          uri: lb://RESUME
+          predicates:
+            - Path=/api/resumes/**
+
+        - id: application
+          uri: lb://APPLICATION
+          predicates:
+            - Path=/api/applications/**
+
+        - id: wishlist
+          uri: lb://WISHLIST
+          predicates:
+            - Path=/api/wishlists/**
+
+        - id: notification
+          uri: lb://NOTIFICATION
+          predicates:
+            - Path=/api/notifications/**
+
+        - id: location
+          uri: lb://LOCATION
+          predicates:
+            - Path=/api/location/**
+
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: password
+      host: localhost
+      port: 27017
+      database: user
+
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+
+  endpoints:
+    web:
+      exposure:
+        include: health, gateway, prometheus

@@ -1,0 +1,45 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+  messages:
+    basename: messages
+    encoding: UTF-8
+    cache-duration: 3600
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+
+  tracing:
+    sampling:
+      probability: 1.0
+
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+
+jwt:
+  signingKey: secret
+
+aws:
+  region: ap-southeast-2
+  s3:
+    bucket: jobnet-ipj
+
+notification:
+  entity-types:
+    - id: 1
+      name: Post
+      description: Creating a post.
+    - id: 2
+      name: Post
+      description: Updating a post.
+    - id: 3
+      name: Post
+      description: Delete a post.
+    - id: 4
+      name: Message
+      description: Send a message.
