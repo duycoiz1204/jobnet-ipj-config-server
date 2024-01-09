@@ -74,7 +74,7 @@ spring:
             - Path=/api/resumes/**
 
         - id: application
-          uri: lb://APPLICATION
+          uri: lb://APPL
           predicates:
             - Path=/api/applications/**
 
