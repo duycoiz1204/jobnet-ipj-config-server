@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: password
+      host: mongo
+      port: 27017
+      database: user
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-server:8761/eureka/

@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8086
 
 spring:
   data:
@@ -9,12 +9,13 @@ spring:
       password: password
       host: localhost
       port: 27017
-      database: business
+      database: application
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
 
 management:
   endpoint:

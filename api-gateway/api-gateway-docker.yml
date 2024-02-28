@@ -1,5 +1,6 @@
-server:
-  port: 8086
+app:
+  eureka-server: discovery-server
+  mongo: mongo
 
 spring:
   data:
@@ -7,11 +8,12 @@ spring:
       authentication-database: admin
       username: root
       password: password
-      host: localhost
+      host: ${app.mongo}
       port: 27017
-      database: application
+      database: user
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://${app.eureka-server}:8761/eureka/
+

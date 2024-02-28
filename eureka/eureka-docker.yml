@@ -1,0 +1,13 @@
+app: 
+  eureka-server: discovery-server
+server:
+  port: 8761
+    
+eureka:
+  instance:
+    hostname: ${app.eureka-server}
+    
+  client:
+    service-url:
+      defaultZone: http://${app.eureka-server}:8761/eureka
+

@@ -1,3 +1,8 @@
+app: 
+  eureka-server: discovery-server
+  mongo: mongo
+  mail: maildev
+
 server:
   port: 8088
 
@@ -7,12 +12,12 @@ spring:
       authentication-database: admin
       username: root
       password: password
-      host: localhost
+      host: ${app.mongo}
       port: 27017
       database: notification
       
   mail:
-    host: localhost
+    host: ${app.mail}
     port: 1025
     username: hello
     password: hello
@@ -32,14 +37,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
-
-management:
-  endpoint:
-    gateway:
-      enabled: true
-
-  endpoints:
-    web:
-      exposure:
-        include: health, gateway, prometheus
+      defaultZone: http://${app.eureka-server}:8761/eureka/
