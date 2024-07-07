@@ -6,10 +6,10 @@ spring:
     gateway:
       globalcors:
         cors-configurations:
-          '[/**]':
-            allowed-origins: '*'
-            allowed-methods: '*'
-            allowed-headers: '*'
+          "[/**]":
+            allowed-origins: "*"
+            allowed-methods: "*"
+            allowed-headers: "*"
             max-age: 30
 
       routes:
@@ -88,10 +88,10 @@ spring:
           predicates:
             - Path=/api/notifications/**
 
-        - id: location
-          uri: lb://LOCATION
+        - id: payment
+          uri: lb://PAYMENT
           predicates:
-            - Path=/api/location/**
+            - Path=/api/payment/**
 
   data:
     mongodb:

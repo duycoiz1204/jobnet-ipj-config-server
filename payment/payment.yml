@@ -1,0 +1,20 @@
+server:
+  port: 8089
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+paypal:
+  client:
+    id: AW7ylUclrBu4PMFWdoIiK0ieUsJmP7akgil8W5tavc-vJHjBSppsa0z3JBDPLdCK5xjZPGPwyILn3q40
+    secret: EEa4uHCueGSdNz7RMKZjNqkV868-tu5HAVawwnCXZ2zw1I4nxxV2QZP7FaZL6Su0iXPWy51sW8zxJ9xM
+  mode: sandbox
+  url:
+    success: "http://localhost:3001/en/profile/info?upgradeAccount=success"
+    cancel: "http://localhost:3001/en/profile/info?upgradeAccount=cancel"
