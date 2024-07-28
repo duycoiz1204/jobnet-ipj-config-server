@@ -3,3 +3,10 @@ management:
     web:
       exposure:
         include: "*"
+
+  metrics:
+    enable:
+      all: false
+
+  tracing:
+    enabled: false
